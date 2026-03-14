@@ -1,41 +1,23 @@
-# Immobilienberater AI, GitHub Pages static version
+# ImmoChat Property Listings
 
-This repo is designed to work as a pure static site on GitHub Pages.
+This revised package is a root-only static dataset designed for GitHub repository hosting and ZIP downloads.
 
-## Key change
+## What changed
 
-There is only one API file:
+- Replaced `twalk.chat` references with the GitHub repository URL `https://github.com/plill-overlay/immochat`.
+- Simplified the dataset to two example listings: `listing-001` and `listing-008`.
+- Kept all files in the repository root.
+- Added direct image files in root for agent discovery and local ZIP preview.
+- Added `ai.json` as an agent-friendly schema hint.
 
-- `https://twalk.chat/api.json`
+## Discovery flow
 
-That file contains the complete dataset.
+1. `index.html`
+2. `api.json`
+3. `listing-001.html` / `listing-008.html`
+4. `listing-001-1.jpg`, `listing-001-2.jpg`, `listing-008-1.jpg`, `listing-008-2.jpg`
 
-## How LLMs should use it
+## Notes
 
-1. Fetch `/api.json`
-2. Read the `listings` array
-3. Filter locally based on the user query
-4. Return plain-text answers with clickable `listing_url` links
-
-## Why this works well on GitHub Pages
-
-GitHub Pages can serve static JSON files but cannot run a backend or dynamic search API.
-
-This version avoids that problem by making the API static and query-independent.
-
-## Files
-
-- `index.html`
-- `api.json`
-- `api-docs.html`
-- `openapi.json`
-- `ai-plugin.json`
-- `llms.txt`
-- `listing-001.html` to `listing-020.html`
-
-## Recommended public URLs
-
-- https://twalk.chat/
-- https://twalk.chat/api.json
-- https://twalk.chat/llms.txt
-- https://twalk.chat/openapi.json
+- The included JPG files are placeholders so the ZIP is complete and image references resolve locally.
+- Replace them with real property photos if you have original assets.

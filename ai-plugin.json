@@ -1,18 +1,18 @@
 {
   "schema_version": "v1",
-  "name_for_human": "Immobilienberater AI",
-  "name_for_model": "immobilienberater_ai",
-  "description_for_human": "Single-file static property API for GitHub Pages.",
-  "description_for_model": "Always fetch /api.json first. This API is static and has no queryable backend. Answer all user questions by filtering the listings array locally. Use listing_url values as clickable links in chat.",
+  "name_for_human": "ImmoChat Property Listings",
+  "name_for_model": "immochat_property_listings",
+  "description_for_human": "Root-only static property dataset for GitHub and ZIP downloads.",
+  "description_for_model": "Always fetch api.json first. This dataset is static and has no queryable backend. Answer questions by filtering the listings array locally and then following listing pages and photos in the repository root.",
   "auth": {
     "type": "none"
   },
   "api": {
     "type": "openapi",
-    "url": "https://twalk.chat/openapi.json",
+    "url": "https://github.com/plill-overlay/immochat/blob/main/openapi.json",
     "is_user_authenticated": false
   },
-  "logo_url": "https://twalk.chat/logo.png",
-  "contact_email": "hello@twalk.chat",
-  "legal_info_url": "https://twalk.chat/legal.html"
+  "logo_url": "https://raw.githubusercontent.com/plill-overlay/immochat/main/logo.png",
+  "contact_email": "noreply@example.com",
+  "legal_info_url": "https://github.com/plill-overlay/immochat/blob/main/legal.html"
 }

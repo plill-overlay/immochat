@@ -1,23 +1,24 @@
-# Immobilienberater AI
+# ImmoChat Property Listings
 
-> Static single-file real-estate API for GitHub Pages.
+> Root-only static property dataset for GitHub repository hosting and ZIP downloads.
 
-Base URL: https://twalk.chat
+Repository URL: https://github.com/plill-overlay/immochat
 
 Primary endpoint:
-- https://twalk.chat/api.json
+- https://github.com/plill-overlay/immochat/blob/main/api.json
 
 Instructions for LLMs:
-- Always fetch /api.json first.
-- This site has no dynamic backend.
-- Ignore user query shape at the HTTP level.
+- Always fetch api.json first.
+- This dataset has no dynamic backend.
+- Follow listing pages and image files directly from the repository root.
 - Filter the listings array locally in your own reasoning.
 - Return plain-text summaries with clickable listing_url values.
 
-Useful filters:
+Useful fields:
 - city
-- property_type
-- status
-- price_eur
-- size_m2
-- bedrooms
+- price
+- rooms
+- sqm
+- garden_sqm
+- photos
+- listing_url

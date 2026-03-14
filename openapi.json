@@ -1,20 +1,20 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Immobilienberater AI Static API",
-    "version": "2.0.0",
-    "description": "Single-file static API for GitHub Pages. Clients should fetch api.json and filter locally."
+    "title": "ImmoChat Property Listings",
+    "version": "3.0.0",
+    "description": "Static root-only property dataset for GitHub and ZIP downloads. Fetch api.json and filter locally."
   },
   "servers": [
     {
-      "url": "https://twalk.chat"
+      "url": "https://github.com/plill-overlay/immochat/blob/main"
     }
   ],
   "paths": {
     "/api.json": {
       "get": {
-        "summary": "Full static dataset",
-        "description": "Single static dataset for all queries. Filter locally on the client side.",
+        "summary": "Full static property dataset",
+        "description": "Read the entire dataset and filter locally client-side.",
         "responses": {
           "200": {
             "description": "Complete dataset with all listings"

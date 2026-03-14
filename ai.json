@@ -1,0 +1,32 @@
+{
+  "name": "immochat",
+  "description": "Root-only static property dataset for GitHub and ZIP downloads. Fetch api.json first, then read listing pages and image files from the repository root.",
+  "repository_url": "https://github.com/plill-overlay/immochat",
+  "api_url": "https://github.com/plill-overlay/immochat/blob/main/api.json",
+  "listing_fields": [
+    "id",
+    "title",
+    "city",
+    "price",
+    "rooms",
+    "sqm",
+    "garden_sqm",
+    "photos",
+    "url",
+    "listing_url"
+  ],
+  "discovery_order": [
+    "api.json",
+    "listing-001.html",
+    "listing-008.html",
+    "listing-001-1.jpg",
+    "listing-001-2.jpg",
+    "listing-008-1.jpg",
+    "listing-008-2.jpg"
+  ],
+  "notes": [
+    "No JavaScript required",
+    "No authentication required",
+    "All files are intentionally stored in the repository root"
+  ]
+}
