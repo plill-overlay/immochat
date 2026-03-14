@@ -1,0 +1,26 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Immobilienberater AI Static API",
+    "version": "2.0.0",
+    "description": "Single-file static API for GitHub Pages. Clients should fetch api.json and filter locally."
+  },
+  "servers": [
+    {
+      "url": "https://twalk.chat"
+    }
+  ],
+  "paths": {
+    "/api.json": {
+      "get": {
+        "summary": "Full static dataset",
+        "description": "Single static dataset for all queries. Filter locally on the client side.",
+        "responses": {
+          "200": {
+            "description": "Complete dataset with all listings"
+          }
+        }
+      }
+    }
+  }
+}

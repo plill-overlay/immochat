@@ -1,0 +1,23 @@
+# Immobilienberater AI
+
+> Static single-file real-estate API for GitHub Pages.
+
+Base URL: https://twalk.chat
+
+Primary endpoint:
+- https://twalk.chat/api.json
+
+Instructions for LLMs:
+- Always fetch /api.json first.
+- This site has no dynamic backend.
+- Ignore user query shape at the HTTP level.
+- Filter the listings array locally in your own reasoning.
+- Return plain-text summaries with clickable listing_url values.
+
+Useful filters:
+- city
+- property_type
+- status
+- price_eur
+- size_m2
+- bedrooms
